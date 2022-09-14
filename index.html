@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>VanillaJS • TodoMVC</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        <section class="todoapp">
+            <header class="header">
+                <h1>todos</h1>
+                <input class="new-todo" placeholder="What needs to be done?" autofocus>
+            </header>
+
+            <section class="main">
+                <input id="toggle-all" class="toggle-all" type="checkbox">
+                <label for="toggle-all">Mark all as complete</label>
+
+                <ul class="todo-list">
+                    <li class="completed">
+                        <input id="todo-1" class="toggle" checked type="checkbox">
+                        <label for="todo-1">HTML</label>
+                        <button class="destroy"></button>
+                    </li>
+
+                    <li class="completed">
+                        <input id="todo-2" class="toggle" checked type="checkbox">
+                        <label for="todo-2">CSS</label>
+                        <button class="destroy"></button>
+                    </li>
+
+                    <li>
+                        <input id="todo-3" class="toggle" type="checkbox">
+                        <label for="todo-3">Javascript</label>
+                        <button class="destroy"></button>
+                    </li>
+                </ul>
+            </section>
+
+            <footer class="footer">
+                <span class="todo-count">1 items left</span>
+                <ul class="filters">
+                    <li>
+                        <a href="#/" data-filter="all" class="selected">All</a>
+                    </li>
+                    <li>
+                        <a data-filter="active" href="#/active">Active</a>
+                    </li>
+                    <li>
+                        <a data-filter="completed" href="#/completed">Completed</a>
+                    </li>
+                </ul>
+                <button class="clear-completed">Clear completed</button>
+            </footer>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
